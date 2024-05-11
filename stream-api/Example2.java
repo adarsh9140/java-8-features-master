@@ -1,6 +1,7 @@
 package com.javamultiplex.streams;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -17,8 +18,11 @@ public class Example2 {
 		list.add(15);
 		list.add(25);
 		System.out.println(list);
+
 		List<Integer> list1 = list.stream().map(I -> 2 * I).collect(Collectors.toList());
 		System.out.println(list1);
+
+
 
 	}
 

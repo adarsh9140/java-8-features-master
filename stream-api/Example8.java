@@ -14,10 +14,16 @@ public class Example8 {
 		list.add(5);
 		list.add(15);
 		list.add(25);
+
 		System.out.println("Output by Lambda Expression.");
 		list.stream().forEach(I -> System.out.println(I));
+
 		System.out.println("Output by Method reference.");
 		list.stream().forEach(System.out::println);
+
+
+		list.stream().forEach(System.out::println);
+
 	}
 
 }

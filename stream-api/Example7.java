@@ -17,8 +17,12 @@ public class Example7 {
 		System.out.println(list);
 		Integer min = list.stream().min((i1, i2) -> i1.compareTo(i2)).get();
 		System.out.println("Minimum value : " + min);
+
 		Integer max = list.stream().max((i1, i2) -> i1.compareTo(i2)).get();
 		System.out.println("Maximum value : " + max);
+
+
+
 	}
 
 }
