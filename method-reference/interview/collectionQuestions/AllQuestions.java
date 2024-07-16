@@ -34,11 +34,13 @@ public class AllQuestions {
 		int[] arr1 = {5, 3, 8, 2, 9, 1};
 		int[] arr2 = {7, 6, 4, 2, 9};
 		
+		
 		Arrays.stream(arr1).sum();
 		Arrays.stream(arr1).average();
 		
 		int[] ints = IntStream.concat(Arrays.stream(arr1), Arrays.stream(arr2)).distinct().sorted().toArray();
 		System.out.println(Arrays.toString(ints));
+		
 		
 		int[] reversedArray1 = IntStream.range(0, arr1.length).map(i -> arr1[arr1.length - i - 1]).toArray();
 		
@@ -70,6 +72,7 @@ public class AllQuestions {
 		List<String> sorted1 = strings.stream().sorted(Comparator.comparing(String::length)).collect(Collectors.toList());
 		
 		System.err.println("collect5 " + sorted1);
+		
 		
 	}
 	

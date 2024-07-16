@@ -18,8 +18,8 @@ public class PalindromeChecker {
 	}
 	
 	public static void main(String[] args) {
-		String testString1 = "A man, a plan, a canal, Panama";
+		String testString1 = "AAA";
 		
-		System.out.println(testString1 + " is palindrome? " + isPalindrome(testString1)); // true
+		System.out.println(testString1 + " is palindrome? " + isPalindrome(testString1));
 	}
 }

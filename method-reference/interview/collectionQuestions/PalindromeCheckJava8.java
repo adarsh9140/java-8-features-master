@@ -6,10 +6,16 @@ public class PalindromeCheckJava8 {
 	
 	
 	public static void main(String[] args) {
-		String str = "abcabc";
+		String str = "madam";
 		
 		boolean isPalindrome = IntStream.range(0, str.length() / 2)
 				.allMatch(i -> str.charAt(i) == str.charAt(str.length() - i - 1));
+		
+		
+		boolean b = IntStream.range(0, str.length() / 2).allMatch(i -> str.charAt(i) == str.charAt(str.length() - 1));
+		
+		
+		System.out.println(b);
 		
 		if (isPalindrome) {
 			System.out.println(str + " is a palindrome.");

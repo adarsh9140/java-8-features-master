@@ -30,7 +30,7 @@ public class FindAverage {
 		
 		List<Integer> list3 = list2.stream().filter(e -> Collections.frequency(list2, e) > 1).collect(Collectors.toList());
 		
-		System.out.println(list3);
+		System.err.println(" 33 " + list3);
 		
 		Set<Integer> set = new HashSet<Integer>();
 		

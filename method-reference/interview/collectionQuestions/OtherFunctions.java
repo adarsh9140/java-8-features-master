@@ -13,7 +13,7 @@ public class OtherFunctions {
 		
 		setEmplyeeData(emp);
 		
-		Employee em = emp.stream().collect(Collectors.maxBy(Comparator.comparing(Employee::getId))).get();
+		Employee em = emp.stream().max(Comparator.comparing(Employee::getId)).get();
 		
 		Employee employee =
 				emp.stream().max(Comparator.comparing(Employee::getId)).get();

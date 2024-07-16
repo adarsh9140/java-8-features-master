@@ -13,6 +13,7 @@ public class StringJoinerExample {
 		
 		StringJoiner joiner = new StringJoiner("-", "[", "]");
 		
+		
 		Arrays.asList(stringArr).stream().forEach(e -> joiner.add(e));
 		
 		System.out.println(joiner);
